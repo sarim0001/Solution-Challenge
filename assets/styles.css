@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #0f6d30; /* Slightly dark green on hover */
+}
+
+/* Login Button */
+.login-button {
+  background: white;
+  color: black;
+  padding: 8px 16px;
+  border: 2px solid #0f6d30;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background: #0f6d30;
+  color: white;
+}
+
+/* Register Button (Fixing the Issue) */
+.register-button {
+  background-color: #0f6d30;
+  color: white !important; /* Ensure text is visible */
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.register-button:hover {
+  background-color: #0c5725; /* Darker green on hover */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2e8b57;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.get-started,
+.learn-more {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-started {
+  background-color: white;
+  color: #0f6d30;
+  font-weight: bold;
+}
+
+.learn-more {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: #0f6d30;
+}
