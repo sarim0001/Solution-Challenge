@@ -12,6 +12,14 @@ body {
   align-items: center;
   padding: 10px 20px;
   background-color: white;
+  flex-wrap: wrap; /* Allows items to move in mobile view */
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -22,7 +30,13 @@ body {
 }
 
 .navbar a:hover {
-  color: #0f6d30; /* Slightly dark green on hover */
+  color: #0f6d30;
+}
+
+/* Buttons Container */
+.navbar .buttons {
+  display: flex;
+  gap: 10px;
 }
 
 /* Login Button */
@@ -41,10 +55,10 @@ body {
   color: white;
 }
 
-/* Register Button (Fixing the Issue) */
+/* Register Button */
 .register-button {
   background-color: #0f6d30;
-  color: white !important; /* Ensure text is visible */
+  color: white !important;
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -55,7 +69,7 @@ body {
 }
 
 .register-button:hover {
-  background-color: #0c5725; /* Darker green on hover */
+  background-color: #0c5725;
 }
 
 /* Hero Section */
@@ -105,4 +119,35 @@ body {
 .learn-more:hover {
   background-color: white;
   color: #0f6d30;
+}
+
+/* --- Mobile View Fix --- */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items */
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .login-button,
+  .register-button {
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    margin: 5px 0;
+  }
 }
